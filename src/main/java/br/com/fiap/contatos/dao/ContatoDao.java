@@ -30,5 +30,11 @@ public class ContatoDao {
         em.persist(contato);
     }
 
+    public list<Contato> ListarTodosOsContatos(){
+        // SQL -->  select * from tbl_contatos  ORDER BY nome ASC
+
+        // JPQL
+        String consulta = "select c from Contato c ORDER BY nome ASC";
+    }
 
 }
